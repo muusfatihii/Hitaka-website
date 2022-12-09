@@ -1,0 +1,466 @@
+
+@media screen and (max-width:766px) {
+
+
+/*-------------------------------------------------------------------nav bar--------------------------------------------------------*/
+    header nav .link{
+        content-visibility: hidden;
+    }
+
+
+    nav .hamburger_menu{
+        content-visibility: visible;
+    }
+
+/*---------------------------------------------------------------panier mobile--------------------------------------------------------*/
+
+#opencart{
+    visibility: hidden;
+}
+
+#opencart_mobile{
+    visibility: visible;
+}
+
+
+/*--------------------------------------------------------------items preview----------------------------------------------------------*/
+
+.carte_preview{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
+}
+
+
+.carte_preview .items_preview{
+    background: none;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.item.envers{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.item .description_plat{
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+    width: fit-content;
+
+}
+
+.item .description_plat p{
+    padding: 5px;
+
+}
+
+.item .img_plat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+}
+
+.item .img_plat img{
+    width: 300px;
+    height: 300px;
+}
+
+
+/*----------------------------------they speak about us----------------------------*/
+
+.speak_about_us .title{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+.speak_about_us .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #F3F310, #FFFFFF);
+
+}
+
+.speak_about_us .container .figaro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 100vw;
+    height: fit-content;
+
+}
+
+.speak_about_us .container .figaro .who{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.speak_about_us .container .figaro .who img{
+    width: 50%;
+
+}
+.speak_about_us .container .figaro .what{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    text-align: center;
+}
+
+
+
+
+
+/*----------------------------------------------------about us-------------------------------------*/
+.items_preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(to bottom, #D8D819, #FFFFFF);
+    height: fit-content;
+}
+
+
+.item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item.reverse{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.item .description_plat{
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+
+}
+
+.item .description_plat p{
+    padding: 5px;
+
+}
+
+
+
+.item .img_chef{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item .img_chef img{
+    width: 100%;
+}
+
+
+
+.item .img_kitchen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item .img_kitchen img{
+    width: 100%;
+}
+
+
+
+/*-----------------------------------------Contact ---------------------------------------------*/
+
+.conteneur{
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: none;
+}
+
+.form .form_title{
+    margin-bottom: 20px;
+}
+
+.form .input_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
+.form .input_area input{
+    height: 47px;
+}
+
+.form .submit_btn{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn button{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: #F3F310;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+}
+
+
+
+.conteneur .contact{
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.conteneur .contact .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #363636;
+    color: #F3F310;
+
+
+}
+
+.conteneur .contact .content .address{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+
+.conteneur .contact .img{
+display: none;
+}
+
+
+
+/*--------------------------------------------------------------------------carte-------------------------------------------------*/
+
+
+}
+
+@media screen and (max-width:572px) {
+
+    .items_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .items_container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+
+@media (max-width:875px){
+
+
+    .conteneur{
+        padding: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+    
+    
+    .contact_box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: none;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: none;
+    }
+    
+    .form .form_title{
+        margin-bottom: 20px;
+    }
+    
+    .form .input_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: yellow;
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    
+    .form .input_area input{
+        height: 47px;
+    }
+    
+    .form .submit_btn{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .submit_btn button{
+        height: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        background-color: black;
+        color: #F3F310;
+        border-radius: 5px;
+        border: none;
+        align-self: center;
+    }
+    
+    
+    
+    .conteneur .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+    
+    }
+    
+    .conteneur .contact .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #363636;
+        color: #F3F310;
+    
+    
+    }
+    
+    .conteneur .contact .content .address{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    
+    
+    .conteneur .contact .img{
+    display: none;
+    }
+    
+    } 

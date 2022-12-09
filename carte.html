@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo_hitaka"></a>
+            <ul>
+                <li class="link"><a href="index.html">Accueil</a></li>
+                <li class="link"><a href="apropos.html">A Propos</a></li>
+                <li class="link"><a href="carte.html"><strong>Carte</strong></a></li>
+                <li class="link"><a href="contact.html">Contact</a></li>
+                <li  class="hamburger_menu"><a><i><img id="hamburger-menu" src="img/hamburger.png" alt="hamburger_menu"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <div id="nav-bar-mobile" class="nav-mobile">
+            <ul class="links">
+                <li><span><a href="index.html">Accueil</a></span></li>
+                <li><span><a href="apropos.html">A Propos</a></span></li>
+                <li><span><a href="carte.html"><strong>Carte</strong></a></span></li>
+                <li><span><a href="contact.html">Contact</a></span></li>
+            </ul>
+        </div>
+
+
+    
+
+    <div class="notreCarte_banner">
+
+        <h3>Notre Carte</h3>
+        <div class="panier">
+            <h4>Mon Panier</h4>
+            <a >
+                <img id="opencart"  src="img/shopping-cart.png" alt="panier-icon">
+                <img id="opencart_mobile"  src="img/shopping-cart.png" alt="panier-icon">
+            </a>
+        </div>
+    </div>
+
+    <div id="cart_containerr" class="cart_containerr">
+        <div class="cart_title"><h6>What’s in my cart</h6></div>
+        <table id="details_cart_desktop" class="details_cart">
+                <tr>
+                    <th>Articles</th>
+                    <th>Q</th>
+                    <th>P.U</th>
+                </tr>
+        </table>
+        
+        <div class="total_cart">
+            <div class="commandBtnContainer"><button id="Commander_desktop">Passer La Commande</button><h6 id="confirmation_msg">Votre commande est en cours de traitement</h6></div>
+            <div class="totalDispaly"><h6>Total</h6><h6><span id="totalDispaly_desktop">00.00</span>$</h6></div>
+        </div>
+    </div>
+
+    <div class="categorie">
+        <div><h3>Categories</h3></div>
+        <div class="options">
+            <a  id="suchisSelector" href="#suchis" style="cursor: pointer;">Sushis</a>
+            <a  id="obentosSelector" href="#obentos" style="cursor: pointer;">Obentos</a>
+            <a  id="platsSelector" href="#plats" style="cursor: pointer;">Plats</a>
+        </div>
+    </div>
+    
+    <div id="suchis" class="suchi_title_container">
+        <div class="suchi_title">
+            <h4>Sushis</h4>
+        </div>
+    </div>
+
+    
+
+<div id="Suchis" class="items_container">
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi1</span></span></div>
+                <div class="prix"><span>200</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSuchi1" >1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi1" class="Up"><span>+</span></button>
+                            <button id="DownSuchi1" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Suchi1',200),clickOne2('Suchi1',200)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi2</span></span></div>
+                <div class="prix"><span>300</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi2">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi2" class="Up"><span>+</span></button>
+                            <button id="DownSuchi2" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi2',300),clickOne2('Sushi2',300)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi3</span></span></div>
+                <div class="prix"><span>500</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi3">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi3" class="Up"><span>+</span></button>
+                            <button id="DownSuchi3" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi3',500),clickOne2('Sushi3',500)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi4</span></span></div>
+                <div class="prix"><span>600</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi4">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi4" class="Up"><span>+</span></button>
+                            <button id="DownSuchi4" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi4',600),clickOne2('Sushi4',600)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi5</span></span></div>
+                <div class="prix"><span>800</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi3">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi5" class="Up"><span>+</span></button>
+                            <button id="DownSuchi5" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi5',800),clickOne2('Sushi5',800)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi6</span></span></div>
+                <div class="prix"><span>1000</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi6">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi6" class="Up"><span>+</span></button>
+                            <button id="DownSuchi6" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi6',1000),clickOne2('Sushi6',1000)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi7</span></span></div>
+                <div class="prix"><span>1200</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi7">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi7" class="Up"><span>+</span></button>
+                            <button id="DownSuchi7" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi7',1200),clickOne2('Sushi7',1200)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="item_containerr">
+        <div class="item">
+        <div class="best_seller"><span>Best Seller</span></div>
+        <div class="picAndDetails">
+            <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+            <div class="details">
+                <div class="nom"><span>Sushi8</span></span></div>
+                <div class="prix"><span>560</span></div>
+                <div class="addToCart">
+                    <div class="quantite">
+                        <div class="displayQ selectedQ" id="selectedQSushi8">1</div>
+                        <div class="QUpDown">
+                            <button id="UpSuchi6" class="Up"><span>+</span></button>
+                            <button id="DownSuchi6" class="Down"><span>-</span></button>
+                        </div>
+                    </div>
+                    <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Sushi8',560),clickOne2('Sushi8',560)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    <div id="obentos" class="obentos_title_container">
+        <div class="obentos_title">
+            <h4>Obentos</h4>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="Obentos" class="items_container">
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Obento1</span></span></div>
+                    <div class="prix"><span>1000</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQObento1">1</div>
+                            <div class="QUpDown">
+                                <button id="UpObento1" class="Up"><span>+</span></button>
+                                <button id="DownObento1" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Obento1',1000),clickOne2('Obento1',1000)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Obento2</span></span></div>
+                    <div class="prix"><span>1700</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQObento2">1</div>
+                            <div class="QUpDown">
+                                <button id="UpObento2" class="Up"><span>+</span></button>
+                                <button id="DownObento2" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Obento2',1700),clickOne2('Obento2',1700)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Obento3</span></span></div>
+                    <div class="prix"><span>1400</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQObento3">1</div>
+                            <div class="QUpDown">
+                                <button id="UpObento3" class="Up"><span>+</span></button>
+                                <button id="DownObento3" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Obento3',1400),clickOne2('Obento3',1400)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Obento4</span></span></div>
+                    <div class="prix"><span>600</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQObento4">1</div>
+                            <div class="QUpDown">
+                                <button id="UpObento4" class="Up"><span>+</span></button>
+                                <button id="DownObento4" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Obento4',600),clickOne2('Obento4',600)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Obento6</span></span></div>
+                    <div class="prix"><span>850</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQObento6">1</div>
+                            <div class="QUpDown">
+                                <button id="UpObento6" class="Up"><span>+</span></button>
+                                <button id="DownObento6" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Obento6',850),clickOne2('Obento6',850)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="plats" class="suchi_title_container">
+        <div class="suchi_title">
+            <h4>Plats</h4>
+        </div>
+    </div>
+
+    <div id="Plats" class="items_container">
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat1</span></span></div>
+                    <div class="prix"><span>500</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat1">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat1" class="Up"><span>+</span></button>
+                                <button id="DownPlat1" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat1',500),clickOne2('Plat1',500)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat2</span></span></div>
+                    <div class="prix"><span>1000</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat2">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat2" class="Up"><span>+</span></button>
+                                <button id="DownPlat2" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat2',1000),clickOne2('Plat2',1000)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat3</span></span></div>
+                    <div class="prix"><span>900</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat3">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat3" class="Up"><span>+</span></button>
+                                <button id="DownPlat3" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat3',900),clickOne2('Plat3',900)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat4</span></span></div>
+                    <div class="prix"><span>600</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat4">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat4" class="Up"><span>+</span></button>
+                                <button id="DownPlat4" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat4',600),clickOne2('Plat4',600)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat5</span></span></div>
+                    <div class="prix"><span>650</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat5">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat5" class="Up"><span>+</span></button>
+                                <button id="DownPlat5" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat5',650),clickOne2('Plat5',650)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat6</span></span></div>
+                    <div class="prix"><span>450</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat6">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat6" class="Up"><span>+</span></button>
+                                <button id="DownPlat6" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat6',450),clickOne2('Plat6',450)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="item_containerr">
+            <div class="item">
+            <div class="best_seller"><span>Best Seller</span></div>
+            <div class="picAndDetails">
+                <div class="pic"><img src="img/plat1.jpg" alt=""></div>
+                <div class="details">
+                    <div class="nom"><span>Plat7</span></span></div>
+                    <div class="prix"><span>350</span></div>
+                    <div class="addToCart">
+                        <div class="quantite">
+                            <div class="displayQ selectedQ" id="selectedQPlat7">1</div>
+                            <div class="QUpDown">
+                                <button id="UpPlat7" class="Up"><span>+</span></button>
+                                <button id="DownPlat7" class="Down"><span>-</span></button>
+                            </div>
+                        </div>
+                        <button id="addToCart" class="addToCartBtn" onclick="clickOne1('Plat7',350),clickOne2('Plat7',350)">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="social_networks_area">
+            <p>Folllow US</p>
+            <div class="social_networks">
+                <a><img src="img/facebook_logo.png" alt="facebook_logo"></a>
+                <a><img src="img/twitter_logo.png" alt="twitter_logo"></a>
+                <a><div class="logo_container"><img src="img/linkedin_logo.png" style="width:10px;height:10px;" alt="linkedin_logo"></div></a>
+                <a><div class="logo_container"><img src="img/instagram_logo.png" style="width:10px;height:10px;" alt="instagram_logo"></div></a>
+            </div>
+        </div>
+    
+        <div class="rights"><p>© 2022 All Rights Reserved</p></div>
+    </footer>
+
+
+
+
+<div id="cart_container" class="cart_container carthidden">
+    <div class="cart_title"><h6 id="CartClose">Fermer X</h6><h6>What’s in my cart</h6></div>
+    <table class="details_cart" id="details_cart_mobile">
+            <tr>
+                <th>Articles</th>
+                <th>Q</th>
+                <th>P.U</th>
+            </tr>
+    </table>
+    <div class="commandBtnContainer"><button id="Commander_mobile">Passer La Commande</button></div>
+    <div class="total_cart"><h6>Total</h6><h6><span id="totalDispaly_mobile">00.00</span>$</h6></div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+<script src="index.js" type="text/javascript"></script>
+<script src="panier.js" type="text/javascript"></script>
+<script src="carte.js" type="text/javascript"></script>
+</html>
